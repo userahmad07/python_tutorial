@@ -1,0 +1,42 @@
+# for loop is used for iterating over a sequense that might be list, dictionary, etc
+
+
+#We can also break a loop in between without making it go through the whole sequence by:
+fruits = ["apple", "bannana", "cherry"]
+for x in fruits:
+    print(x)
+    if x == "bannana":
+       break                            #This will print apple and bannana because the check is happening after the bannana is getting printed.
+
+print("---------------------------------")
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    break
+  print(x)                             #This will print apple and not bannana because the check is happening before the bannana is getting printed. So it breaks the loop as the x gets the value "bannana"
+
+print("---------------------------------")
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    continue
+  print(x)  #This will print apple and skip banana and then continue with iteration because The continue keyword is used to end the current iteration in a for loop (or a while loop), and continues to the next iteration. 
+
+print("---------------------------------")
+
+#There is also something caled nested loops where we can have a loop inside another loop.
+count = [1,2,3,4,5,6,7,8,9]
+for y in count:
+   for z in fruits:
+      print(y, z)
+
+print("---------------------------------")
+
+adj = ["red", "big", "tasty"]
+fruits = ["apple", "banana", "cherry"]
+
+for x in adj:
+  for y in fruits:
+    print(x, y)
