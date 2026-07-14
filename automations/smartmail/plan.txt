@@ -1,0 +1,7 @@
+We Import MIMEText, base64, google's oauth modules like "request" for token.json update, "build" for service related actions, ImportAppFlow for login and credentials to handle the login. install google's python library for these modules. and os for interacting with os
+
+firstly we use the MIMEText to create a scafold or structure where later we can add the content.
+
+After that scafold we put values to the structure and convert that into bytes and then enocode it before decoding it to utf-8.
+
+define scope of the app, like sending mail with gmail api. then using "build" module select the service we want to use and a write the execute command passing the encoded base64url message.
